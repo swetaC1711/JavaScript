@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Multiplication</title>
+  <link rel="shortcut icon" href="img/matrix.png">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <script src="mat.js"></script>
+    <div class="container">
+      <h2>Matrix Multiplication</h2>
+      <div class="table-container">
+        <div class="flex-item">
+          <h3>Matrix 1:</h3>
+          <table id="matrix1" class="center">
+            <tr>
+              <td class="td"><input type="number" value="1"></td>
+              <td class="td"><input type="number" value="2"></td>
+            </tr>
+            <tr>
+              <td class="td"><input type="number" value="3"></td>
+              <td class="td"><input type="number" value="4"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="flex-container">
+          <div class="flex-item">
+            <button class="add-btn" onclick="addRow('matrix1')">Add Row</button>
+            <button class="add-btn" onclick="addColumn('matrix1')">Add Column</button>
+            <button class="add-btn" onclick="deleteRow('matrix1')">Delete Row</button>
+            <button class="add-btn" onclick="deleteColumn('matrix1')">Delete Column</button>
+          </div>
+        </div>
+        <div class="flex-item">
+          <h3>Matrix 2:</h3>
+          <table id="matrix2" class="center">
+            <tr>
+              <td class="td"><input type="number" value="5"></td>
+              <td class="td"><input type="number" value="6"></td>
+            </tr>
+            <tr>
+              <td class="td"><input type="number" value="7"></td>
+              <td class="td"><input type="number" value="8"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <button class="add-btn" onclick="addRow('matrix2')">Add Row</button>
+          <button class="add-btn" onclick="addColumn('matrix2')">Add Column</button>
+          <button class="add-btn" onclick="deleteRow('matrix2')">Delete Row</button>
+          <button class="add-btn" onclick="deleteColumn('matrix2')">Delete Column</button>
+        </div>
+      </div>
+      <br><br><br>
+      <button onclick="multiply()">Multiply</button>
+      <div id="result" class="result-box center">
+        <h3>Result:</h3>
+        <div id="resultTable"></div>
+      </div>
+    </div>
+
+</body>
+
+</html>
